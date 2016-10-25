@@ -6,4 +6,11 @@
 //  Copyright © 2016 Ctec. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class PlayingCard : Card
+{
+    
+}
+
+
