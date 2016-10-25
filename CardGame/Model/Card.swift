@@ -26,5 +26,14 @@ class Card
         return description
     }
     
+    func getBackImage() -> UIImage
+    {
+        return backImage
+    }
+    
+    func isUp() -> Bool
+    {
+        return isFaceUp
+    }
 }
 
