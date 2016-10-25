@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>180</y>
+      <w>290</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>PlayingCard - class
+--
+-suit -Data members
+-color
+-number
+-Image
+
+-
+--
+get/set  - methods
+init</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>390</y>
+      <w>90</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Card
+--
+-back
+-face
+--
++get/set
++-&gt;Facing</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>340</y>
+      <w>30</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>510</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>630</y>
+      <w>100</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>CCGCard
+--
+-score
+-rating
+-text
+--
+get/set</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>500</y>
+      <w>270</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>   CardGame.Model :: PlayingCard
+--
+-suit : String
+-color : UIColor
+-rank : Int
+-image : UIImage
+
+--
++get/set
++init
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>230</y>
+      <w>200</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model::Card
+--
+-backImage : UIImage
+-isFaceUp : Bool
+--
++init()              [these are  ...swift constructors
++getBackImage() : UIImage
++isFaceUp() : Bool
++toString() : String
+
+bg=magenta
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>70</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>   Package and class
+CardGame.Model :: Cards
+--
+            Data Members
+
+--
+   Constructors and methods
+
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>370</y>
+      <w>30</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+</diagram>
