@@ -58,6 +58,16 @@ class PlayingCard : Card
             self.frontImage = frontImage
         }
     }
+    
+    
+    override init()
+    {
+        super.init() //calls playingCard object, when inheriting, use this to init your self properties
+        frontImage = UIImage()
+        color = UIColor()
+        rank = 0
+        suit = ""
+    }
 //    java like methods that you could do.
 //    func getRank() -> Int
 //    {
