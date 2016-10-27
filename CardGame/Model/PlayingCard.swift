@@ -66,7 +66,17 @@ class PlayingCard : Card
         frontImage = UIImage()
         color = UIColor()
         rank = 0
-        suit = ""
+        suit = String()
+    }
+    
+    
+    override func toString() -> String
+    {
+    let description = "This PlayingCard has a face value of \(rank), a color of \(color), and is of the  \(suit) suit"
+    
+        
+        
+    return description
     }
 //    java like methods that you could do.
 //    func getRank() -> Int
