@@ -76,11 +76,11 @@
 		67BF0E761DBFAD2B00ABA537 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
-				670F0AC91DC252010015D5E0 /* Controller */,
 				67BF0E771DBFAD2B00ABA537 /* AppDelegate.swift */,
 				670F0ACA1DC2520D0015D5E0 /* View */,
-				67BF0E831DBFAD2C00ABA537 /* Info.plist */,
 				67BF0E8D1DBFAEC500ABA537 /* Model */,
+				670F0AC91DC252010015D5E0 /* Controller */,
+				67BF0E831DBFAD2C00ABA537 /* Info.plist */,
 			);
 			path = CardGame;
 			sourceTree = "<group>";
