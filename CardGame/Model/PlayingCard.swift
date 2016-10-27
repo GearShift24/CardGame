@@ -10,9 +10,18 @@ import UIKit
 
 class PlayingCard : Card
 {
-
-    
-    
+    private var rank : Int
+        {
+        get
+            {
+                return self.rank
+            }
+        
+        set(rank)
+            {
+                self.rank = rank
+            }
+    }
 }
 
 

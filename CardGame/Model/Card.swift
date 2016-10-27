@@ -10,16 +10,43 @@ import UIKit
 
 class Card
 {
+    
+    //these are properties included with getters/setters
     private var backImage : UIImage
-      
+            {
+            get
+                {
+                    return self.backImage
+                }
+            set(backImage)
+                {
+                    self.backImage = backImage
+                }
+            }
+    
+    
     private var isFaceUp : Bool
+        {
+        get
+            {
+                return self.isFaceUp
+            }
+        set(isFaceUp)
+            {
+                self.isFaceUp = isFaceUp
+            }
+        }
+    
     
     
     init()
     {
-    backImage = UIImage()
-    isFaceUp = false
+        isFaceUp = false
+        backImage = UIImage()
     }
+    
+    
+
     
     func toString() -> String
     {
@@ -32,9 +59,20 @@ class Card
         return backImage
     }
     
-    func isUp() -> Bool
+    func setBackImage(newImage : UIImage)
     {
-        return isFaceUp
+        backImage = newImage
     }
+    
+    
+//    //this is the exact same as a property
+//    func isUp() -> Bool
+//    {
+//        return isFaceUp
+//    }
+//    func setIsFacing(isFaceUp : Bool) -> Void
+//    {
+//        self.isFaceUp = isFaceUp
+//    }
 }
 
