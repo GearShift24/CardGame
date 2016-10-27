@@ -65,14 +65,14 @@ class Card
     }
     
     
-//    //this is the exact same as a property
-//    func isUp() -> Bool
-//    {
-//        return isFaceUp
-//    }
-//    func setIsFacing(isFaceUp : Bool) -> Void
-//    {
-//        self.isFaceUp = isFaceUp
-//    }
+    //this is the exact same as a property
+    func isUp() -> Bool
+    {
+        return isFaceUp
+    }
+    func setIsFacing(isFaceUp : Bool) -> Void
+    {
+        self.isFaceUp = isFaceUp
+    }
 }
 
