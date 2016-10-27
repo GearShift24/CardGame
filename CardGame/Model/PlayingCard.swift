@@ -10,18 +10,47 @@ import UIKit
 
 class PlayingCard : Card
 {
-    private var rank : Int
+    private var rank : Int   //swift properties getters
         {
-        get
-            {
-                return self.rank
-            }
+        get                   // slash setters
+        {
+            return self.rank
+        }
         
         set(rank)
-            {
-                self.rank = rank
-            }
+        {
+            self.rank = rank
+        }
+        }
+    
+    private var suit: String
+    {
+        get
+        {
+            return self.suit
+        }
+        set(suit)
+        {
+            self.suit = suit
+        }
     }
+    
+    
+//    java like methods that you could do.
+//    func getRank() -> Int
+//    {
+//        return self.rank
+//    }
+//    
+//    func setRank(rank : Int)
+//    {
+//        self.rank = rank
+//    }
+    
+    
+    
 }
+
+
 
 
