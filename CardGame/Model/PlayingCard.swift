@@ -35,7 +35,29 @@ class PlayingCard : Card
         }
     }
     
+    private var color : UIColor
+        {
+        get
+        {
+            return self.color
+        }
+        set(color)
+        {
+            self.color = color
+        }
+    }
     
+    private var frontImage : UIImage
+        {
+        get
+        {
+            return self.frontImage
+        }
+        set(frontImage)
+        {
+            self.frontImage = frontImage
+        }
+    }
 //    java like methods that you could do.
 //    func getRank() -> Int
 //    {
