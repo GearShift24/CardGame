@@ -19,7 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRc-KB-GlO">
                                 <rect key="frame" x="160" y="87" width="281" height="425"/>
-                                <state key="normal" backgroundImage="OverwatchSleeve"/>
+                                <state key="normal" backgroundImage="cardback"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -31,6 +31,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="OverwatchSleeve" width="1386" height="2063"/>
+        <image name="cardback" width="1386" height="2063"/>
     </resources>
 </document>

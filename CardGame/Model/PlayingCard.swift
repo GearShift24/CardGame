@@ -64,9 +64,20 @@ class PlayingCard : Card
     {
         super.init() //calls playingCard object, when inheriting, use this to init your self properties
         frontImage = UIImage()
-        color = UIColor()
+        color = UIColor.redColor();
         rank = 0
         suit = String()
+    }
+    
+    init(withRank: Int, ofSuit: String)
+    {
+        super.init()
+        frontImage = UIImage()
+        color = UIColor.blueColor()
+        
+        rank = withRank
+        suit = ofSuit
+
     }
     
     
