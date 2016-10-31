@@ -10,7 +10,7 @@ import UIKit
 
 class PlayingCard : Card
 {
-    private var rank : Int   //swift properties getters
+    internal var rank : Int   //swift properties getters
         {
         get                   // slash setters
         {
@@ -23,7 +23,7 @@ class PlayingCard : Card
         }
         }
     
-    private var suit: String
+    internal var suit: String
     {
         get
         {
@@ -35,7 +35,7 @@ class PlayingCard : Card
         }
     }
     
-    private var color : UIColor
+    internal var color : UIColor
         {
         get
         {
@@ -47,7 +47,7 @@ class PlayingCard : Card
         }
     }
     
-    private var frontImage : UIImage
+    internal var frontImage : UIImage
         {
         get
         {
@@ -101,20 +101,25 @@ class PlayingCard : Card
     return description
     }
 //    java like methods that you could do.
-//    func getRank() -> Int
-//    {
-//        return self.rank
-//    }
-//    
-//    func setRank(rank : Int)
-//    {
-//        self.rank = rank
-//    }
+    func getRank() -> Int
+    {
+        return self.rank
+    }
     
+    func setRank(rank : Int)
+    {
+        self.rank = rank
+    }
     
+    //the modifier 'class' in front of the func means that this method is visible without creating an instance of the class in question.
+    //this is a class message, not an instance method.
+    class func validRanks() -> [String]
+    {
+    return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
     
+    class func validSuits() -> [String]
+    {
+        return ["♥️","♠️","♦️","♣️"]
+    }
 }
-
-
-
-
