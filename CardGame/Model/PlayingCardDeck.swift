@@ -6,12 +6,4 @@
 //  Copyright © 2016 Ctec. All rights reserved.
 //
 
-import UIKit
-
-class PlayingCardDeck : Deck
-{
-    override init()
-    {
-        
-    }
-}
+import Foundation

@@ -6,17 +6,4 @@
 //  Copyright © 2016 Ctec. All rights reserved.
 //
 
-import UIKit
-
-
-class Deck
-{
-    
-    private var deck : Int
-    
-     init()
-    {
-        deck = 52
-    }
-    
-}
+import Foundation
