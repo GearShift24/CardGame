@@ -1,5 +1,5 @@
 //
-//  Deck.swift
+//  PlayingCardDeck.swift
 //  CardGame
 //
 //  Created by Wrigley, Joseph on 10/31/16.
@@ -8,15 +8,10 @@
 
 import UIKit
 
-
-class Deck
+class PlayingCardDeck : Deck
 {
-    
-    private var deck : Int
-    
-     init()
+    override init()
     {
-        deck = 52
+        
     }
-    
 }
