@@ -22,10 +22,10 @@ class PlayingCard : Card
     override init()
     {
     
-        frontImage = UIImage()
-        color = UIColor.redColor();
-        rank = 0
-        suit = String()
+        self.frontImage = UIImage()
+        self.color = UIColor.redColor();
+        self.rank = 0
+        self.suit = String()
         super.init() //calls playingCard object, when inheriting, use this to init your self properties
     }
     
@@ -34,9 +34,9 @@ class PlayingCard : Card
         
         frontImage = UIImage()
         color = UIColor.blueColor()
-        
         rank = withRank
         suit = ofSuit
+        
         super.init()
     }
     
