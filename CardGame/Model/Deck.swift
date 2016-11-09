@@ -15,31 +15,51 @@ class Deck
     
     func shuffleDeck() -> Void
     {
+        //creates a temporary array to hold card object
         var tempDeck = [Card]()
         
-        while cards.count > 0
+        //repeat until there are no cards in self.cards
+        while self.cards.count > 0  //you dont need to use self. but it helps you remember it is intenral data member.
         {
             //chooses a valid raindex in the range of 0...cards.count-1
             let randomSpot = Int (arc4random() % UInt32(cards.count))
+            
             //takes the card from that spot, from the deck. the deck decreases in count.
-            let removedCard = cards.removeAtIndex(randomSpot)
+            let removedCard = self.cards.removeAtIndex(randomSpot)
+            
             //adds the removed card to the end of the new temporary deck.
             tempDeck.append(removedCard)
         }
-        //Add the removed card th the temporary deck
-        cards = tempDeck
+        // repleace the state deck with the temporary deck
+        self.cards = tempDeck
     }
     
     
     
-//    func drawCard() -> Card!
-//    {
-//        
-//    }
-//    
-//    func drawRandomCard() -> Card!
-//    {
-//        
-//    }
+    func drawCard() -> Card?
+    {
+        if self.cards.count > 0
+        {
+            return cards.removeAtIndex(0)
+        }
+        else
+        {
+            return nil
+        }
+    }
+    
+    
+    func drawRandomCard() -> Card?
+    {
+        if cards.count > 0
+        {
+            let randomIndex = (Int)(arc4random() % (UInt32) (cards.count))
+            return cards.removeAtIndex(randomIndex)
+        }
+        else
+        {
+            return nil
+        }
+    }
     
 }

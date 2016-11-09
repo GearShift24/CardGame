@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>7</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>0</x>
-      <y>196</y>
-      <w>203</w>
-      <h>126</h>
+      <y>190</y>
+      <w>290</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>PlayingCard - class
 --
@@ -25,10 +25,10 @@ init</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>63</x>
-      <y>350</y>
-      <w>63</w>
-      <h>105</h>
+      <x>100</x>
+      <y>430</y>
+      <w>90</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Card
 --
@@ -42,32 +42,32 @@ init</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>77</x>
-      <y>315</y>
-      <w>28</w>
-      <h>49</h>
+      <x>110</x>
+      <y>360</y>
+      <w>50</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>20.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>30.0;70.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>91</x>
-      <y>448</y>
-      <w>21</w>
-      <h>77</h>
+      <x>140</x>
+      <y>570</y>
+      <w>70</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;50.0;80.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>56</x>
-      <y>511</y>
-      <w>70</w>
-      <h>70</h>
+      <x>130</x>
+      <y>650</y>
+      <w>100</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>CCGCard
 --
@@ -81,10 +81,10 @@ get/set</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>434</x>
-      <y>357</y>
-      <w>189</w>
-      <h>126</h>
+      <x>780</x>
+      <y>410</y>
+      <w>270</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>   CardGame.Model :: PlayingCard
 --
@@ -103,10 +103,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>574</x>
-      <y>196</y>
-      <w>140</w>
-      <h>112</h>
+      <x>860</x>
+      <y>220</y>
+      <w>200</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Card
 --
@@ -125,10 +125,10 @@ bg=magenta
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>392</x>
-      <y>133</y>
-      <w>161</w>
-      <h>77</h>
+      <x>700</x>
+      <y>80</y>
+      <w>230</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>   Package and class
 CardGame.Model :: Cards
@@ -144,10 +144,10 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>210</x>
-      <y>357</y>
-      <w>196</w>
-      <h>77</h>
+      <x>450</x>
+      <y>470</y>
+      <w>280</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCardDeck
 --
@@ -162,10 +162,10 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>259</x>
-      <y>224</y>
-      <w>126</w>
-      <h>63</h>
+      <x>440</x>
+      <y>200</y>
+      <w>220</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 --
@@ -173,16 +173,18 @@ bg=orange</panel_attributes>
 --
 init()
 +shuffle: Void
++drawCard() : Card?
++drawRandomCard(: Card?
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1092</x>
-      <y>189</y>
-      <w>133</w>
-      <h>21</h>
+      <x>1690</x>
+      <y>190</y>
+      <w>190</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
@@ -190,34 +192,45 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>259</x>
-      <y>280</y>
-      <w>77</w>
-      <h>91</h>
+      <x>520</x>
+      <y>320</y>
+      <w>30</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>90.0;10.0;10.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>602</x>
-      <y>301</y>
-      <w>42</w>
-      <h>70</h>
+      <x>930</x>
+      <y>370</y>
+      <w>30</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>40.0;10.0;10.0;80.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>427</y>
-      <w>175</w>
-      <h>21</h>
+      <x>690</x>
+      <y>510</y>
+      <w>110</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;230.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>650</x>
+      <y>240</y>
+      <w>230</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;210.0;10.0</additional_attributes>
   </element>
 </diagram>
