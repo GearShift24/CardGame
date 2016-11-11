@@ -37,7 +37,7 @@ class CardGameController : UIViewController
         else
         {
             cardLabel.text = "the deck was exhausted - reinnitilizing"
-            currentDeck = PlayingCardDeck()
+            self.currentDeck = PlayingCardDeck()
             
         }
         
