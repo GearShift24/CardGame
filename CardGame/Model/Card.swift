@@ -12,7 +12,6 @@ class Card
 {
     
     //these are properties included with getters/setters
-    private var backImage : UIImage
     
     
     
@@ -24,7 +23,6 @@ class Card
     init()
     {
         isFaceUp = false
-        backImage = UIImage(named:"cardback")!
     }
     
     
@@ -34,16 +32,6 @@ class Card
     {
         let description = "The card is \(isFaceUp)"
         return description
-    }
-    
-    func getBackImage() -> UIImage
-    {
-        return backImage
-    }
-    
-    func setBackImage(newImage : UIImage)
-    {
-        backImage = newImage
     }
     
     

@@ -16,13 +16,10 @@ class PlayingCard : Card
     
     internal var color : UIColor
     
-    internal var frontImage : UIImage
-    
     
     override init()
     {
     
-        self.frontImage = UIImage()
         self.color = UIColor.redColor();
         self.rank = 0
         self.suit = String()
@@ -31,8 +28,6 @@ class PlayingCard : Card
     
     init(withRank: Int, ofSuit: String)
     {
-        
-        frontImage = UIImage()
         color = UIColor.blueColor()
         rank = withRank
         suit = ofSuit
@@ -54,7 +49,7 @@ class PlayingCard : Card
             facing = "is face down."
         }
     
-    let description = "This PlayingCard has a face value of \(rank), a color of \(color), the back image is \(self.getBackImage()) and is of the  \(suit) suit, also it \(facing)"
+    let description = "This PlayingCard has a face value of \(rank), a color of \(color), the back image is  and is of the  \(suit) suit, also it \(facing)"
     
         
         
