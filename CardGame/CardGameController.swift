@@ -9,10 +9,6 @@
 import UIKit
 class CardGameController : UIViewController
 {
-
-//    @IBOutlet weak var cardLabel: UILabel!
-//
-//    @IBOutlet weak var cardButton: UIButton!
     
     
     @IBOutlet weak var cardOne: UIButton!
@@ -28,7 +24,23 @@ class CardGameController : UIViewController
     
     
     
+    @IBAction func deleteCardOne(sender: UIButton)
+    {
+                    myGame.hand.removeAtIndex(0)
+        cardOne.setTitle("",forState:UIControlState.Normal)  //maybe set this up so that it doesnt instantly remove the card, but a bit later
+
+    }
     
+    @IBAction func deleteCardTwo(sender: UIButton)
+    {
+        myGame.hand.removeAtIndex(1)
+    }
+    
+    
+    @IBAction func deleteCardThree(sender: UIButton)
+    {
+        myGame.hand.removeAtIndex(3)
+    }
     
     
         private lazy var myGame = StupidGame()
@@ -53,7 +65,7 @@ class CardGameController : UIViewController
         
         
         
-            myGame.hand.remove[0]
+
         
         
         

@@ -22,6 +22,7 @@
                                 <rect key="frame" x="20" y="233" width="172" height="256"/>
                                 <state key="normal" backgroundImage="cardback"/>
                                 <connections>
+                                    <action selector="deleteCardOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N2A-3i-8sv"/>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EaZ-d4-beo"/>
                                 </connections>
                             </button>
@@ -29,6 +30,7 @@
                                 <rect key="frame" x="214" y="233" width="172" height="256"/>
                                 <state key="normal" backgroundImage="cardback"/>
                                 <connections>
+                                    <action selector="deleteCardTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGq-WS-wSL"/>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ran-GH-YhA"/>
                                 </connections>
                             </button>
@@ -36,6 +38,7 @@
                                 <rect key="frame" x="408" y="233" width="172" height="256"/>
                                 <state key="normal" backgroundImage="cardback"/>
                                 <connections>
+                                    <action selector="deleteCardThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AjE-cn-TEz"/>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ib-hL-ZWv"/>
                                 </connections>
                             </button>
