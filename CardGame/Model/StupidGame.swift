@@ -34,7 +34,7 @@ class StupidGame
     {
         drawingDeck.shuffleDeck()
         drawCards()
-        playMatchGame()
+       
 
     }
     
@@ -50,6 +50,12 @@ class StupidGame
 
         }
         
+        if(hand.count <= 2)
+        {
+            
+            hand.append((drawingDeck.drawCard() as? PlayingCard)!)
+            
+        }
         if(hand.count <= 2)
         {
             
@@ -94,12 +100,7 @@ class StupidGame
                 drawCards()
             }
 
-        else                                            //!!!!!!!!make so flip score
-        {
-        print("your score is!!!!!! " , score, " (╯°□°)╯︵ ┻━┻") //!!!!!!LATER LINK TO A STORYBOARD LABEL
-        }                                           //this happens when you run out of cards
-        
-        hand.removeAll() //!!!!!make with @IBACTION so you can actually do stuff, 3 different buttons
+      
 
     }
     
