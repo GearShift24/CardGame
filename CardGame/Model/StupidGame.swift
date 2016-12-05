@@ -73,6 +73,7 @@ class StupidGame
         if( hand[0].rank == hand[1].rank) || (hand[0].suit == hand[1].suit)
         {
             hasMatch = true
+            
         }
         else
         {
