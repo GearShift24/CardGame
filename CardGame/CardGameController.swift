@@ -9,7 +9,8 @@
 import UIKit
 class CardGameController : UIViewController
 {
-    private lazy var myGame = StupidGame()
+    fileprivate lazy var myGame = StupidGame()
+    
     
     
     @IBOutlet weak var cardOne: UIButton!
@@ -25,23 +26,34 @@ class CardGameController : UIViewController
     
     
     
-    @IBAction func deleteCardOne(sender: UIButton)
+    @IBAction func deleteCardOne(_ sender: UIButton)
     {
-                            myGame.hand.removeAtIndex(0)
-        cardOne.setTitle("",forState:UIControlState.Normal)  //maybe set this up so that it doesnt instantly remove the card, but a bit later
+                     if myGame.hand.count >= 0
+                     {
+                        myGame.hand.remove(at: 0)
+                        }
+        
+      //  cardOne.setTitle("",for:UIControlState())  //maybe set this up so that it doesnt instantly remove the card, but a bit later
    
     }
 
     
-    @IBAction func deleteCardTwo(sender: UIButton)
+    @IBAction func deleteCardTwo(_ sender: UIButton)  //make these work codyyyyyeerrr henrichsen!
     {
-        myGame.hand.removeAtIndex(1)
-    }
+        
+        
+        if myGame.hand.count >= 0
+        {
+            myGame.hand.remove(at: 1)
+        }    }
     
     
-    @IBAction func deleteCardThree(sender: UIButton)
+    @IBAction func deleteCardThree(_ sender: UIButton)
     {
-        myGame.hand.removeAtIndex(3)
+        if myGame.hand.count >= 0
+        {
+            myGame.hand.remove(at: 2)
+        }
     }
     
     
@@ -55,9 +67,9 @@ class CardGameController : UIViewController
         myGame.startGame()
        
         
-        cardOne.setTitle("\(myGame.hand[0].getCardData())", forState: UIControlState.Normal)
-            cardTwo.setTitle("\(myGame.hand[1].getCardData())", forState: UIControlState.Normal)
-                cardThree.setTitle("\(myGame.hand[2].getCardData())", forState: UIControlState.Normal)
+        cardOne.setTitle("\(myGame.hand[0].getCardData())", for: UIControlState())
+            cardTwo.setTitle("\(myGame.hand[1].getCardData())", for: UIControlState())
+                cardThree.setTitle("\(myGame.hand[2].getCardData())", for: UIControlState())
          myGame.playMatchGame()
         pointButton.text = "Point : \(myGame.score)"
         

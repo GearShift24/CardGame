@@ -15,7 +15,7 @@ class Card
     
     
     
-    private var isFaceUp : Bool
+    fileprivate var isFaceUp : Bool
    
     
     
@@ -40,7 +40,7 @@ class Card
     {
         return isFaceUp
     }
-    func setIsFacing(isFaceUp : Bool) -> Void
+    func setIsFacing(_ isFaceUp : Bool) -> Void
     {
         self.isFaceUp = isFaceUp
     }

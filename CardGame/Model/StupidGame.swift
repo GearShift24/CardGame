@@ -40,7 +40,7 @@ class StupidGame
     
     
     
-    private func drawCards() -> Void    //draws hand to 3 cards after stuff
+    fileprivate func drawCards() -> Void    //draws hand to 3 cards after stuff
     {
     
         if(hand.count <= 2)
@@ -70,7 +70,7 @@ class StupidGame
     func checkMatch() -> Bool
     {
         let hasMatch :Bool
-        if( hand[0].rank == hand[1].rank) || (hand[0].suit == hand[1].suit)
+        if( hand[0].rank == hand[1].rank) || ( hand[1].rank == hand[2].rank) || ( hand[2].rank == hand[0].rank) || (hand[0].suit == hand[1].suit) || (hand[1].suit == hand[2].suit) || (hand[0].suit == hand[2].suit)
         {
             hasMatch = true
             
@@ -100,7 +100,8 @@ class StupidGame
             }
                 drawCards()
             }
-
+        
+        
       
 
     }
