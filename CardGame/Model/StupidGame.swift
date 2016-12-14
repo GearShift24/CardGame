@@ -78,6 +78,7 @@ class StupidGame
         else
         {
             hasMatch = false
+            
         }
         
         return hasMatch
