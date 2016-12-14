@@ -28,31 +28,34 @@ class CardGameController : UIViewController
     
     @IBAction func deleteCardOne(_ sender: UIButton)
     {
-                     if myGame.hand.count >= 0
-                     {
-                        myGame.hand.remove(at: 0)
-                        }
-        
-      //  cardOne.setTitle("",for:UIControlState())  //maybe set this up so that it doesnt instantly remove the card, but a bit later
-   
+        if myGame.drawingDeck.cards.count >= 0
+        {
+            var temp1 = myGame.drawingDeck.drawCard()
+            myGame.hand.insert(temp1, at: 0)
+            myGame.hand.remove(at: 1)
+        }
     }
-
     
     @IBAction func deleteCardTwo(_ sender: UIButton)  //make these work codyyyyyeerrr henrichsen!
     {
         
         
-        if myGame.hand.count >= 0
+        if myGame.drawingDeck.cards.count >= 0
         {
-            myGame.hand.remove(at: 1)
-        }    }
+            var temp2 = myGame.drawingDeck.drawCard()
+            myGame.hand.insert(temp2, at: 1)
+            myGame.hand.remove(at: 2)
+        }
+    }
     
     
     @IBAction func deleteCardThree(_ sender: UIButton)
     {
-        if myGame.hand.count >= 0
+        if myGame.drawingDeck.cards.count >= 0
         {
-            myGame.hand.remove(at: 2)
+           var temp3 = myGame.drawingDeck.drawCard()
+           myGame.hand.insert(temp3, at: 2)
+            myGame.hand.remove(at: 3)
         }
     }
     

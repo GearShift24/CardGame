@@ -52,7 +52,7 @@ class StupidGame
         
         if(hand.count <= 2)
         {
-            
+       
             hand.append((drawingDeck.drawCard() as? PlayingCard)!)
             
         }
